@@ -1,6 +1,6 @@
 # FullStackOpen - Phonebook Backend
 
-Demo: [phonebook app](#getting-started)
+Demo: [phonebook app](https://phonebook-fullstackopen-4l4o.onrender.com/)
 
 ## Getting Started
 
