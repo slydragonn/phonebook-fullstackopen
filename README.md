@@ -1,20 +1,14 @@
-# FullStackOpen - Phonebook App
+# FullStackOpen - Phonebook Backend
 
 ## Getting Started
 
 ```bash
-# Install All (Front/Back) Dependencies
-npm run install
+# Install Dependencies
+npm install
 
-# Build ui
-npm install build:ui
+# Run dev server
+npm run dev
 
-# Deploy app
-npm run deploy:full
-
-# Dev backend
-npm run dev:server
-
-# Dev frontend
-npm run dev:ui
+# Start app
+npm start
 ```

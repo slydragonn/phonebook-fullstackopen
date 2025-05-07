@@ -1,13 +1,23 @@
 {
-  "name": "phonebook-app",
-  "private": true,
-  "version": "0.0.0",
+  "name": "phonebook-backend",
+  "version": "1.0.0",
   "type": "module",
+  "main": "index.js",
   "scripts": {
-    "install": "cd backend && npm install && cd ../frontend && npm install",
-    "build:ui": "cd backend && rm -rf dist && cd ../frontend && npm run build && cp -r dist ../backend",
-    "deploy:full": "npm run install && npm run build:ui && git add . && git commit -m uibuild && git push",
-    "dev:server": "cd backend && npm run dev",
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "install": "npm install && cd ./frontend && npm install",
+    "build:ui": "rm -rf dist && cd ./frontend && npm run build && cp -r dist ../",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
+    "dev:server": "npm run dev",
     "dev:ui": "cd frontend && npm run dev"
+  },
+  "author": "Alejandro Londoño",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "morgan": "^1.10.0"
   }
 }
