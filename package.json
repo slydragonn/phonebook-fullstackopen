@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node index.js",
     "dev": "node --watch index.js",
-    "install": "npm install && cd ./frontend && npm install",
     "build:ui": "rm -rf dist && cd ./frontend && npm run build && cp -r dist ../",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
     "dev:server": "npm run dev",
