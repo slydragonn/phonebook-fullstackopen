@@ -1,0 +1,13 @@
+{
+  "name": "phonebook-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build:ui": "cd backend && rm -rf dist && cd ../frontend && npm run build && cp -r dist ../backend",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
+    "dev:server": "cd backend && npm run dev",
+    "dev:ui": "cd frontend && npm run dev",
+    "install": "cd backend && npm install && cd ../frontend && npm install"
+  }
+}
