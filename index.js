@@ -12,7 +12,7 @@ app.use(express.json());
 morgan.token('body', (req, _) => JSON.stringify(req.body))
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms :body'));
 
-const port = 3000;
+const PORT = process.env.PORT || 3000
 
 let persons = [
   {
@@ -105,6 +105,6 @@ app.delete("/api/persons/:id", (req, res) => {
   }
 })
 
-app.listen(port, () => {
-  console.log(`Server running on: http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Server running on: http://localhost:${PORT}`);
 });

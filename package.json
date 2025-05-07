@@ -8,7 +8,6 @@
     "dev": "node --watch index.js",
     "build:ui": "rm -rf dist && cd ./frontend && npm run build && cp -r dist ../",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
-    "dev:server": "npm run dev",
     "dev:ui": "cd frontend && npm run dev"
   },
   "author": "Alejandro Londoño",
